@@ -5,12 +5,10 @@
 
 .header {
     flex: 1 100%;
-    -webkit-flex: 1 100%;
     display: flex;
     display: -webkit-flex;
     padding: 0 100px;
     border-bottom: 1px solid rgba(0,0,0,.06);
-    -webkit-justify-content: space-between;
     justify-content: space-between;
 }
 
@@ -23,13 +21,21 @@
     line-height: 24px;
 }
 
+.logo__link {
+    color: #44b;
+    text-decoration: none;
+}
+
+.logo__link:hover {
+    color: #fd5;
+    transition: color .55s ease-out;
+}
+
 .menu {
     display: flex;
-    display: -webkit-flex;
     margin: 0;
     padding: 0;
     justify-content: center;
-    -webkit-justify-content: center;
 }
 
 .menu__item {
@@ -47,10 +53,10 @@
 .link {
     color: #44b;
     text-decoration: none;
-    transition: color .15s ease-out;
 }
 
 .link:hover {
     color: #e00;
+    transition: color .55s ease-out;
 }
 
